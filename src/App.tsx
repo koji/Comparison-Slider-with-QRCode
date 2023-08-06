@@ -1,22 +1,14 @@
 import './App.css'
+import { Slider } from './components/Slider'
 
 function App() {
   return (
-    <>
-      <h1 className='text-3xl font-bold underline'>Vite + React</h1>
-      <p className='text-2xl my-4 '>
-        this is using vite, react, typescript and tailwind class name
-      </p>
-      <div className='flex justify-center items-center'>
-        <pre className='flex flex-col gap-y-3'>
-          <code>
-            $ pnpm create vite react-ts-tailwindcss-vite --template react-ts -p
-          </code>
-          <code>$ pnpm install -D tailwindcss postcss autoprefixer -p</code>
-          <code>$ pnpm tailwindcss init -p</code>
-        </pre>
-      </div>
-    </>
+    <main className='flex min-h-screen flex-col items-center justify-center gap-4'>
+      <h1 className='text-3xl font-bold underline'>
+        QR Code with StableDiffusion + ControleNet
+      </h1>
+      <Slider />
+    </main>
   )
 }
 
